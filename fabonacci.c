@@ -1,29 +1,21 @@
 #include<stdio.h>
-int fabonacci(int num)
+void main()
 {
-    if(num==0)
-    {
-        return 0;
-    }
-    else if(num==1)
-    {
-        return 1;
-    }
-    else 
-    {
-        return fabonacci(num-1)+fabonacci(num-2);
-    }
-}
+    int num, n1, n2, n3, i;
 
-int main()
-{
-    int num,i;
-
-    printf("Enter the num:");
+    printf("Enter num:");
     scanf("%d",&num);
+
+    n1=0;
+    n2=1;
+
+    printf("%d %d ",n1,n2);
 
     for(i=1; i<num; i++)
     {
-        printf("%d ",fabonacci(i));
+        n3 = n1 + n2;
+        n1=n2;
+        n2=n3;
+        printf("%d ",n3);
     }
 }
