@@ -1,16 +1,16 @@
 #include<stdio.h>
 void main()
 {
-    int num, sum=0, i,r;
+    int num, rem, i, sum=0;
 
-    printf("Enter a num:");
+    printf("enter a num:");
     scanf("%d",&num);
 
     for(i=0; i<=num; i++)
     {
-        r = num % 10;
-        sum = sum + r;
+        rem = num % 10;
+        sum = sum + rem;
         num = num / 10;
     }
-    printf("Sum of digits of num is %d",sum);
+    printf("Sum of digits is:%d",sum);
 }
