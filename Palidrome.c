@@ -14,7 +14,7 @@ int main()
     for(j=i; j>=0; j--)
     {
         printf("%c",a[j]);
-        rev=rev=a[j];
+        rev=a[j];
     }
     if(same==rev)
     {
